@@ -7,6 +7,7 @@ import Profile from './pages/Profile';
 import Transactions from './pages/Transactions';
 import Leaderboard from './pages/Leaderboard';
 import BuyPage from './pages/BuyPage';
+import GeminiTesting from './pages/GeminiTesting';
 import { MetaMaskProvider } from './context/MetaMaskContext.jsx';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/transactions' element={<Transactions />} />
         <Route path='/leaderboard' element={<Leaderboard />} />
         <Route path="/buy" element={<BuyPage />} />
+        <Route path="/test" element={<GeminiTesting />} />
       </Routes>
     </Router>
     </MetaMaskProvider>
